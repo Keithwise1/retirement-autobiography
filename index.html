@@ -33,207 +33,499 @@
     <!-- Slideshow -->
     <main class="slideshow" aria-live="polite">
 
-      <!-- 1) Welcome -->
-      <section class="slide active" data-title="Welcome">
-        <div class="center hero">
-          <h1>Welcome</h1>
-          <h2>Retirement Ceremony of</h2>
-          <h3 class="name">Elder Esther W. Muiruri</h3>
-          <p class="lead">A journey of faith, family, and service — PCEA Kanjai Church</p>
-          <div class="cta">14th September, 2025</div>
-        </div>
-      </section>
+     <!-- 1) Welcome -->
+<section class="slide active welcome-slide" data-title="Welcome">
+  <div class="center hero">
+    <h1>🌸 Welcome 🌸</h1>
+    <h2>Retirement Ceremony of</h2>
+    <h3 class="name">Elder Esther W. Muiruri</h3>
+    <p class="lead">A journey of faith, family, and service — PCEA Kanjai Church</p>
+    <div class="cta">14th September, 2025</div>
+  </div>
+</section>
 
-      <!-- 2) Celebration (creeping papers) -->
-      <section class="slide" data-title="Celebration">
-        <div class="center">
-          <h2>Joyful for The Jubilee Service</h2>
-          <p class="muted">A life of faithful service and loving leadership</p>
-        </div>
-        <!-- papers container is inside this slide so effect is isolated -->
-        <div id="papers" aria-hidden="true"></div>
-      </section>
+<!-- 2) Retirement Ceremony (Two-Column Layout with Verse Under Image) -->
+<section class="slide" data-title="Retirement Ceremony"
+         style="display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 3rem 2rem; background: #fff;">
+  
+  <div class="two-col" style="display: flex; align-items: flex-start; justify-content: space-between; gap: 3rem; flex-wrap: wrap; max-width: 1100px; width: 100%;">
+    
+    <!-- LEFT COLUMN -->
+    <div class="col" style="flex: 1; min-width: 300px; text-align: center;">
+      <!-- Top Header -->
+      <h4 style="font-size: 1.3rem; font-weight: 800; margin: 0; color: #0a3d91; letter-spacing: 1px; text-transform: uppercase;">
+        Presbyterian Church of East Africa
+      </h4>
+      <p style="margin: 0.3rem 0; font-size: 1.1rem; font-weight: 600; color: #d62828;">
+        Kambui Presbytery
+      </p>
+      <p style="margin: 0; font-size: 1.05rem; font-weight: 600; color: #007f5f;">
+        Kanjai Parish
+      </p>
+      <div style="width: 70px; height: 3px; background: linear-gradient(90deg, #0a3d91, #d62828, #007f5f); margin: 1rem auto;"></div>
 
-      <!-- 3) Family Tribute (text + portrait) -->
-      <section class="slide" data-title="Family Tribute">
-        <div class="two-col">
-          <div class="col">
-            <h2>Message from the Family</h2>
-            <p>You have been a radiant star in service, a pillar of strength and guidance to all. A glowing reflection of God’s love, your light has truly shone. We deeply love and appreciate you and cherish the legacy of faith and devotion you have shown us.</p>
-            <p class="highlight">Happy Triumphant Retirement</p>
-          </div>
-          <div class="col image-card">
-            <figure>
-              <img class="photo" src="assets/images/elder-esther.jpg" alt="Elder Esther portrait">
-              <figcaption>Elder Esther W. Muiruri</figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
+      <!-- PCEA Logo -->
+      <img src="assets/images/pcea.png.png" alt="PCEA Logo"
+           style="max-width: 140px; display: block; margin: 0 auto 1rem;">
 
-      <!-- 4) Marriage (photo + spouse info) -->
-      <section class="slide" data-title="Marriage">
-        <h2>Marriage & Family</h2>
-        <div class="gallery">
-          <figure>
-            <img class="photo" src="assets/images/marriage.jpg" alt="Marriage photo">
-            <figcaption>Married 1989 — Mr. James Ayub Muiruri</figcaption>
-          </figure>
-          <figure>
-            <img class="photo" src="assets/images/family.jpg" alt="Family photo">
-            <figcaption>Family Portrait</figcaption>
-          </figure>
-        </div>
+      <!-- Ceremony Details -->
+      <h2 style="margin-bottom: 0.3rem;">Retirement Ceremony of</h2>
+      <h3 class="highlight" style="margin-bottom: 0.8rem; color: #0a3d91;">Elder Esther W. Muiruri</h3>
 
-        <div class="info-list">
-          <p><strong>Marriage:</strong> 1989 — united with Mr. James Ayub Muiruri (late).</p>
-          <p><strong>Family:</strong> Blessed with three (3) children, four (4) grandchildren and one (1) great-grandchild.</p>
-        </div>
-      </section>
+      <p class="muted" style="margin-bottom: 0;">
+        On 14th September, 2025 <br>
+        At PCEA Kanjai Church
+      </p>
+    </div>
 
-      <!-- 5) Children (separate slide) -->
-      <section class="slide" data-title="Children">
-        <h2>Children</h2>
-        <div class="people-grid">
-          <figure><img class="photo" src="assets/images/family/Child 1.jpg" alt="Michael Muiruri"><figcaption>Michael Muiruri</figcaption></figure>
-          <figure><img class="photo" src="assets/images/family/Child 2.jpg" alt="Jane Muiruri"><figcaption>Benson Boro</figcaption></figure>
-          <figure><img class="photo" src="assets/images/family/Child 3.jpg" alt="Kariuki Muiruri"><figcaption>Martha Muiruri</figcaption></figure>
-          <figure><img class="photo" src="assets/images/family/Child 4.jpg" alt="Lucy Mburu"><figcaption>Maureen Wairimu</figcaption></figure>
-        </div>
-      </section>
+    <!-- RIGHT COLUMN -->
+    <div class="col" style="flex: 1; min-width: 300px; text-align: center;">
+      <!-- Elder Esther Image -->
+      <img class="photo" src="assets/images/elder-esther.jpg" alt="Elder Esther portrait"
+           style="border-radius: 50%; max-width: 250px; display: block; margin: 0 auto 1rem; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+
+      <!-- Bible Verse under Image -->
+      <blockquote class="verse"
+                  style="font-style: italic; color: #6b21a8; line-height: 1.6; max-width: 300px; margin: 0 auto;">
+        “God is faithful, by whom you were called into fellowship of His Son,
+        Jesus Christ our Lord.” <br>
+        <span style="font-weight: bold;">(1 Cor.1:9)</span>
+      </blockquote>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- 3) Order of Service -->
+<section class="slide" data-title="Order of Service" 
+  style="background: linear-gradient(to bottom, #fff, #f9f9f9); padding: 1.5rem 2rem; min-height: 100vh; display: flex; flex-direction: column; justify-content: flex-start;">
+
+  <!-- HEADER -->
+  <div style="text-align:center; margin-bottom: 1rem;">
+    <h3 style="color:#003366; font-weight:bold; text-transform: uppercase; margin: 0;">
+      PRESBYTERIAN CHURCH OF EAST AFRICA
+    </h3>
+    <h4 style="color:#00509e; font-weight:bold; margin: 0.2rem 0;">
+      KAMBUI PRESBYTERY KANJAI PARISH
+    </h4>
+    <h2 style="color:#002147; font-weight:bold; margin: 0.3rem 0;">
+      ELDERS ESTHER W. MUIRURI’S RETIREMENT SERVICE PROGRAMME
+    </h2>
+    <p style="font-weight:bold; color:#000; margin: 0;">SUNDAY 14TH SEPTEMBER 2025 AT 10:00 AM</p>
+    <hr style="border: none; border-top: 3px solid #0072bb; width: 80%; margin: 0.8rem auto;">
+  </div>
+
+  <!-- ORDER OF SERVICE LIST -->
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; max-width: 1000px; margin: 0 auto; flex: 1;">
+    <ol style="list-style-position: inside; font-size: 1.05rem; line-height: 1.6; margin: 0;">
+      <li>Kirk Session assembles in the vestry at 9:30 a.m.</li>
+      <li>Reading of the edict for the third time</li>
+      <li>A. Procession Hymn No. 30 (new) old (22)</li>
+      <li>Hymn No. 386 (new)</li>
+      <li>Call to worship</li>
+      <li>Nyimbo cia gwithagathaga kuhooya (praise &amp; worship)</li>
+      <li>Mahoya</li>
+      <li>Kuhoera ciana na aa youth na kumbura witikio</li>
+      <li>Kunyita andu ugeni</li>
+      <li>Choirs (i), (ii), (iii), (iv)</li>
+      <li>Kumenyithania maundu : Session clerk</li>
+      <li>Igongona ria kuugira Elder Esther W. Muiruri uhoro</li>
+      <ul style="list-style: lower-alpha inside; margin: 0.2rem 0 0 1rem;">
+        <li>Rugano rukuhi rwake : Session clerk</li>
+        <li>Kuheana Certificate ya Retirement Presbytery</li>
+        <li>Ngatho cia Kirk session na Certificate</li>
+        <li>Congregations</li>
+      </ul>
+    </ol>
+
+    <ol start="10" style="list-style-position: inside; font-size: 1.05rem; line-height: 1.6; margin: 0;">
+      <li>Mathomo</li>
+      <ul style="list-style: none; margin: 0.2rem 0 0 1rem;">
+        <li>1st Reading -</li>
+        <li>2nd Reading -</li>
+      </ul>
+      <li>Rwimbo No. 333 (new)</li>
+      <li>Mahunjio</li>
+      <li>Altar call na mahoya</li>
+      <li>Tithe and offerings</li>
+      <li>Offertory prayers</li>
+      <li>Vote of thanks</li>
+      <li>Rwimbo No. 37 (new)</li>
+      <li>Kirathimo</li>
+      <li>B. Recession Hymn: No 307 (New)</li>
+    </ol>
+  </div>
+</section>
+<!-- 4) Message from Parish Minister -->
+<section class="slide" data-title="Parish Minister">
+  <div class="two-col">
+    <div class="col">
+      <h2 class="parish-header">MESSAGE FROM THE PARISH MINISTER</h2>
+      <p>Congratulations Elder Esther. On your retirement! As you step into this new season of retirement, it is important to know that retirement is not an ending but a new chapter of divine purpose. It is an opportunity to serve in a new way.</p>
+      <p>Today we honour you for the many years of service. When you look back in gratitude, you will remember how the Lord your God led you all the way. We give thanks for your dedication, faithfulness and love for God's people.</p>
+      <p>Through your tireless Service, many souls have been encouraged. We thank God for using you as His vessel to teach, guide and shepherd His people. Your legacy will continue to inspire many generations.</p>
+      <p>Congratulations! May the words of our Lord in Matthew 25:21 Be your portion. <em>“Well done, good and faithful servant! you have been faithful with a few things; I will put you in charge of many things…”</em> May God's blessings follow you all the days of your life.</p>
+      <p class="italic">Rev Grace Githaiga — Parish Minister</p>
+    </div>
+
+    <div class="col image-card">
+      <img class="photo minister-photo" src="assets/images/Minister/min.jpg" alt="Rev Grace Githaiga" onerror="this.style.display='none'">
+    </div>
+  </div>
+</section>
+
+<!-- 8) Autobiography (birth, education & marriage + wedding photo) -->
+<section class="slide" data-title="Autobiography">
+  <h2>Autobiography of Elder Esther Wambui Muiruri</h2>
+
+  <div class="card-row">
+    <div class="card">
+      <h3>BIRTH</h3>
+      <p>Elder Esther Wambui Muiruri was born in 1960 to the late Mr. Benson Boro Kimani and Mrs. Martha Muthoni Boro at Giathieko Village, Kiambu Sub-County, Kiambu County.</p>
+    </div>
+    <div class="card">
+      <h3>EDUCATION</h3>
+      <p>Her scholastic journey began at Kanjai Primary in 1968, where she later sat for her C.P.E. examination in 1975. She then proceeded to Central Girls' School, Mombasa, before joining Muguga High School, where she did her junior exams.</p>
+    </div>
+  </div>
+
+  <!-- Marriage & Wedding Photo in Side-by-Side Layout -->
+  <div class="marriage-row">
+    <div class="marriage-text">
+      <h3>MARRIAGE</h3>
+      <p>In 1989, Elder Esther Muiruri was united in holy matrimony with the late Jamie Ayub Muiruri. Their marriage was a testimony of God's grace, blessed with three children, four grandchildren, and one great-grandchild.</p>
+    </div>
+    <figure class="marriage-photo">
+      <img class="photo wedding-photo" src="assets/images/wedding-photo.png" alt="Wedding Day">
+      <figcaption class="caption">Jamie & Elder Esther Muiruri — Wedding Day (1989)</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 9) Church Journey & Leadership -->
+<section class="slide compact-slide" data-title="Church Journey">
+  <h2>CHURCH & LEADERSHIP</h2>
+
+  <div class="church-journey">
+    <div class="card">
+      <h3>CHURCH</h3>
+      <p>Elder Esther was born and brought up in a Christian Faith Family. She joined P.C.E.A Kanjai Church in her early childhood, later worshipped at P.C.E.A St. Margaret Mombasa and P.C.E.A Ayub Kinyua, before returning to her home church at P.C.E.A Kanjai. In 1989, she was ordained as a member of the Woman's Guild.</p>
+    </div>
+
+    <div class="card">
+      <h3>A) ORDINATION TO ELDERSHIP</h3>
+      <p>She was ordained as a church elder in the year 2000 by Rev. Muniu Muchai at P.C.E.A Kiambururu Parish, Kambui Presbytery. Since then, she has faithfully served in the following districts:</p>
+      <ul>
+        <li>Kianjogu</li>
+        <li>Kanjai Center</li>
+        <li>Karweti</li>
+        <li>Githunguri (her last district of service)</li>
+        <li>Giachumi</li>
+        <li>Gicunji</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>B) PATRONAGE</h3>
+      <p>She has served as a patron for the Boys and Girls Brigade.</p>
+    </div>
+
+    <div class="card">
+      <h3>C) LEADERSHIP</h3>
+      <ul>
+        <li>Church Deacon for six years</li>
+        <li>L.C.C Secretary for six years</li>
+        <li>Woman's Guild Treasurer for three years</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>D) T.E.E</h3>
+      <p>In 2009, she completed a Diploma in Theological Education by Extension and pursued Brigade Basic Course I.</p>
+    </div>
+  </div>
+</section>
+
+      <!-- 5) Children -->
+<section class="slide" data-title="Children">
+  <h2 style="text-align:center; margin-bottom:1rem;">Children</h2>
+
+  <div class="people-grid" role="list">
+    <figure role="listitem">
+      <img class="photo" src="assets/images/family/Child 1.jpg" alt="Michael Muiruri">
+      <figcaption>Michael Muiruri</figcaption>
+    </figure>
+
+    <figure role="listitem">
+      <img class="photo" src="assets/images/family/Child 2.jpg" alt="Benson Boro">
+      <figcaption>Benson Muiruri</figcaption>
+    </figure>
+
+    <figure role="listitem">
+      <img class="photo" src="assets/images/family/Child 3.jpg" alt="Martha Muiruri">
+      <figcaption>Martha Muiruri</figcaption>
+    </figure>
+
+    <figure role="listitem">
+      <img class="photo" src="assets/images/family/Child 4.jpg" alt="Maureen Wairimu">
+      <figcaption>Maureen Wairimu</figcaption>
+    </figure>
+  </div>
+</section>
+
 
       <!-- 6) Grandchildren (separate slide) -->
       <section class="slide" data-title="Grandchildren">
         <h2>Grandchildren</h2>
         <div class="people-grid">
-          <figure><img class="photo" src="assets/images/family/Grandchild 1.jpg" alt="Grandchild Keith"><figcaption>KEITH MURURI</figcaption></figure>
+          <figure><img class="photo" src="assets/images/family/Grandchild 1.jpg" alt="Grandchild Keith"><figcaption>KEITH MUIRURI</figcaption></figure>
           <figure><img class="photo" src="assets/images/family/Grandchild 2.jpg" alt="Grandchild Keith"><figcaption>KEITH NDARWA</figcaption></figure>
           <figure><img class="photo" src="assets/images/family/Grandchild 3.jpg" alt="Grandchild Woodrow"><figcaption>WOODROW MUIRURI</figcaption></figure>
           <figure><img class="photo" src="assets/images/family/Grandchild 4.jpg" alt="Grandchild Mackayla"><figcaption>MACKAYLA WAMBUI</figcaption></figure>
-          <figure><img class="photo" src="assets/images/family/Granchild 5.jpg" alt="Grandchild Rose"><figcaption>ROSE THIONGO</figcaption></figure>
+          <figure><img class="photo" src="assets/images/family/Grandchild 5.jpg" alt="Grandchild Rose"><figcaption>ROSE THIONG'O</figcaption></figure>
         </div>
       </section>
 
       <!-- 7) Great-Grandchild (separate slide) -->
-      <section class="slide" data-title="Great Grandchild">
-        <h2>Great-Grandchild</h2>
-        <div class="center">
-          <figure style="max-width:360px;margin:0 auto">
-            <img class="photo" src="assets/images/family/Great-Granchild-1.jpg" alt="Great Grandchild"></figcaption>TINSLEY MUIRURI</figcaption></figure>
-            
-        </div>
-      </section>
+<section class="slide" data-title="Great Grandchild">
+  <h2>Great-Grandchild</h2>
+  <div class="center">
+    <figure style="max-width:420px;margin:0 auto">
+      <img class="photo full-image" src="assets/images/family/Great-Grandchild-1.jpg" alt="Great Grandchild">
+      <figcaption>TINSLEY MUIRURI</figcaption>
+    </figure>
+  </div>
+</section>
 
-      <!-- 8) Autobiography (birth & education) -->
-      <section class="slide" data-title="Autobiography">
-        <h2>Autobiography of Elder Esther Wambui Muiruri</h2>
-        <div class="card-row">
-          <div class="card">
-            <h3>Birth</h3>
-            <p>Elder Esther Wambui Muiruri was born in 1960 to the late Mr. Benson Boro Kimani and Mrs. Martha Muthoni Boro at Giathieko Village, Kiambu Sub-County, Kiambu County.</p>
-          </div>
-          <div class="card">
-            <h3>Education</h3>
-            <p>Her scholastic journey began at Kanaji Primary (C.P.E. 1975). She later attended Central Girls' School, Muguga High School and Thogoto Teachers Training College.</p>
-          </div>
-        </div>
-        <div class="card-row">
-          <div class="card">
-            <h3>Service</h3>
-            <p>She served faithfully in the parish—women’s guild, community outreach and multiple leadership roles across the presbytery.</p>
-          </div>
-          <div class="card">
-            <h3>Marriage</h3>
-            <p>In 1989 she was united in holy matrimony with the late Mr. James Ayub Muiruri.</p>
-          </div>
-        </div>
-      </section>
 
-      <!-- 9) Order of Service -->
-      <section class="slide" data-title="Order of Service">
-        <h2>Service Programme</h2>
-        <ol class="programme">
-          <li>Procession Hymn</li>
-          <li>Call to Worship &amp; Invocation</li>
-          <li>Praise &amp; Worship</li>
-          <li>Prayer</li>
-          <li>Hymn</li>
-          <li>Scripture Reading</li>
-          <li>Choir</li>
-          <li>Offering</li>
-          <li>Family Presentation</li>
-          <li>Vote of Thanks</li>
-          <li>Recession Hymn</li>
-        </ol>
-        <p class="muted">Presided by Parish Minister</p>
-      </section>
+<!-- 10) Graduation & Service -->
+<section class="slide" data-title="Graduation & Service">
+  <h2>GRADUATION & SERVICE</h2>
 
-      <!-- 10) Message from Parish Minister -->
-      <section class="slide" data-title="Parish Minister">
-        <div class="two-col">
-          <div class="col">
-            <h2>Message from the Parish Minister</h2>
-            <p>Congratulations Elder Esther. Retirement is a new season to serve in new ways. We thank God for your dedication and faithfulness. May the Lord continue to bless you.</p>
-            <p class="italic">Rev Grace Githaiga — Parish Minister</p>
-          </div>
-          <div class="col image-card">
-            <img class="photo" src="assets/images/Minister/min.jpg" alt="Rev Grace Githaiga" onerror="this.style.display='none'">
-          </div>
-        </div>
-      </section>
+  <div class="two-col">
+    <!-- Left Column: Graduation Photos -->
+    <div class="col">
+      <h3 class="sub-heading">Graduation</h3>
+      <div class="gallery">
+        <figure>
+          <img class="photo" src="assets/images/graduation-1.png" alt="Elder Esther Graduation 1">
+          <figcaption class="caption">Elder Esther on Graduation Day</figcaption>
+        </figure>
+        <figure>
+          <img class="photo" src="assets/images/graduation-2.png" alt="Elder Esther Graduation 2">
+          <figcaption class="caption">Receiving her Diploma in T.E.E</figcaption>
+        </figure>
+      </div>
+    </div>
 
-      <!-- 11) Vote of Thanks -->
-      <section class="slide" data-title="Vote of Thanks">
-        <h2>Vote of Thanks</h2>
-        <div class="two-col">
-          <div class="col">
-            <p>With hearts full of gratitude, Elder Esther thanks God and everyone who has supported her through the years—family, friends and the congregation.</p>
-            <p class="highlight">"To God be the Glory"</p>
-          </div>
-          <div class="col image-card">
-            <img class="photo" src="assets/images/vote-of-thanks.jpg" alt="Vote of Thanks" onerror="this.style.display='none'">
-          </div>
-        </div>
-      </section>
+<!-- Right Column: Service Photo -->
+<div class="col">
+  <h3 class="sub-heading">Elder Esther</h3>
+  <figure style="max-width:340px;margin:0 auto">
+    <img class="photo service-photo" src="assets/images/elder.png" alt="Elder Esther in Service">
+    <figcaption class="caption">Lovely Woman of God</figcaption>
+  </figure>
+</div>
 
-      <!-- 12) Ministers served with -->
-      <section class="slide" data-title="Ministers">
-        <h2>Ministers served with</h2>
-        <ul class="ministers">
-          <li>Rev. Peter M. Muchai</li>
-          <li>Rev. Timothy G. Kagiri</li>
-          <li>Rev. Simon Mwaura Waweru</li>
-          <li>Rev. Simon Murigi Njaaga</li>
-          <li>Rev. Nancy Muthoni Caure</li>
-          <li>Rev. Francis Ndegwa</li>
-          <li>Rev. Grace Githaiga (current)</li>
-        </ul>
-      </section>
 
-      <!-- 13) Church Journey & Leadership -->
-      <section class="slide" data-title="Church Journey">
-        <h2>Church & Leadership</h2>
-        <div class="card-row">
-          <div class="card">
-            <h3>Ordination</h3>
-            <p>Ordained as an Elder in 2000; served across parish and presbytery faithfully.</p>
-          </div>
-          <div class="card">
-            <h3>Leadership</h3>
-            <p>Former Church Deacon, Women's Guild Treasurer and active committee member in outreach programs.</p>
-          </div>
-        </div>
-      </section>
 
-      <!-- 14) Closing -->
-      <section class="slide" data-title="Closing">
-        <div class="center">
-          <h2>Thank You</h2>
-          <p class="lead">With gratitude we celebrate the life and service of Elder Esther W. Muiruri.</p>
-          <p class="muted">May the Lord continue to bless her and her family.</p>
-          <div class="final-verse">"But as for me and my house, we will serve the Lord." — Joshua 24:15</div>
-        </div>
-      </section>
+  </div>
+</section>
+
+
+     
+
+<!-- 12) Ministers served with -->
+<section class="slide" data-title="Ministers">
+  <h2 class="ministers-heading">MINISTERS SERVED WITH</h2>
+  <p class="intro-text">
+    Elder Esther has faithfully served under the following ministers since her ordination into eldership:
+  </p>
+  <ul class="ministers">
+    <li>Rev. Peter M. Muchai</li>
+    <li>Rev. Timothy G. Kagiri</li>
+    <li>Rev. Simon Mwaura Waweru</li>
+    <li>Rev. Simon Murigi Njaaga</li>
+    <li>Rev. Nancy Muthoni Caure</li>
+    <li>Rev. Francis Ndegwa</li>
+    <li>Rev. Grace Githaiga (current)</li>
+  </ul>
+</section>
+<!-- 14) Vote of Thanks -->
+<section class="slide compact-slide vote-thanks" data-title="Vote of Thanks">
+  <div class="two-col">
+    <!-- Left Column: Image -->
+    <div class="col image-card">
+      <figure>
+        <img class="photo" src="assets/images/vote.png" alt="Elder Esther Vote of Thanks">
+        <figcaption class="caption">Elder Esther W. Muiruri</figcaption>
+      </figure>
+    </div>
+
+    <!-- Right Column: Text -->
+    <div class="col text-content">
+      <h2 class="vote-heading">VOTE OF THANKS</h2>
+      <p>With a heart overflowing in praise, Elder Esther wishes to glorify the Almighty Father in heaven, who has sustained her through a full jubilee season of service. In this jubilant jubilee season, the Lord has been her ever present help, her guide and the song of her heart.</p>
+      <p>She joyfully celebrates her family, where love, sacrifice and steadfast support have been the wind beneath her wings throughout this sacred journey.</p>
+      <p>She warmly honours the presbytery fraternity, her fellow Elders and the Parish Minister, whose prayers, encouragement and fellowship have refreshed her soul. Their leadership, companionship and partnership in the ministry have been a source of strength and inspiration.</p>
+      <p>Finally, with profound elation, Elder Esther extends her gratitude to all who supported, prayed and partnered with her through the years. Each prayer, each word of kindness and each act of love has been a thread woven into this tapestry of grace.</p>
+
+      <blockquote class="bible-verse">
+        “After these things, the word of the Lord came to Abram in a vision, saying,<br>
+        ‘Do not be afraid Abram. I am your shield, your exceedingly great reward.’”
+        <span class="verse-ref">(Genesis 15:1)</span>
+      </blockquote>
+    </div>
+  </div>
+</section>
+<!-- 15) Hymns Slide -->
+<section class="slide hymns-slide" data-title="Hymns">
+  <h2 class="slide-title">HYMNS</h2>
+
+  <div class="hymns-container">
+    <!-- Hymn 1 -->
+    <div class="hymn-card">
+      <h3>No. 386. Hakuhĩ nawẽ Ngai</h3>
+      <p>1. Hakuhĩ nawe Ngai, ngũo ngwenda;<br>
+      Hakuhĩ makiria, Ngai wakwa:<br>
+      Hingo yakwa yothe njikarage nawe,<br>
+      Hakuhĩ makiria, Ngai wakwa.</p>
+
+      <p>2. Nĩĩ ndĩmũgendi rũgendo-inĩ;<br>
+      Ndĩrĩ ndahurũka ngoro-inĩ:<br>
+      No rũmbo nyingiaga ugũo ngithiaga,<br>
+      Hakuhĩ makiria, Ngai wakwa.</p>
+
+      <p>3. Maũndũ matheru mangũcagia;<br>
+      Nĩmo maku mema ma Igũrũ:<br>
+      Hĩndĩ ĩrĩa ndĩ toro ũnjĩkaragie,<br>
+      Hakuhĩ makiria, Ngai wakwa.</p>
+
+      <p>4. Jesu, ũndeithagie ngũkũmagie;<br>
+      Na matukũ mothe ngũkenagie:<br>
+      Na ndona mathina ũnjikaragie,<br>
+      Hakuhĩ makiria, Ngai wakwa.</p>
+
+      <p>Rũgendo rũathĩra rĩa gũkũ thĩ;<br>
+      Ũkandwara Igũrũ gwakũ mũciĩ:<br>
+      Nĩkuo ngakenera tondũ ngaatũũraga,<br>
+      Hakuhĩ makiria, Ngai wakwa.</p>
+    </div>
+
+    <!-- Hymn 2 -->
+    <div class="hymn-card">
+      <h3>No. 333. Mũrigiti E Haha Rĩu</h3>
+      <p>1. Mũrigiti E Haha Rĩu:<br>
+      Nĩ Jesu Mũtangĩri;<br>
+      Atwĩraga ndeto njega:<br>
+      Tũigũe mũgambo wake.</p>
+
+      <p>Gũtirĩ rĩĩtwa rĩa Mũhonokia;<br>
+      Nĩtũgathie rĩĩtwa rĩake<br>
+      Nĩ Jesu Mũrigiti</p>
+
+      <p>2. O rĩu ũngĩmũtĩkĩra<br>
+      Woherwo mehia maku<br>
+      Na ũheo ũhoreri<br>
+      Na nĩũgatũũra nake</p>
+
+      <p>3. Andũ othe nĩ mamũgooce!<br>
+      Rĩu nĩngĩmũtĩkĩra;<br>
+      Nĩnyendaga Mũhonokia,<br>
+      O Jesu Mũrigiti.</p>
+
+      <p>4. Rĩĩtwa rĩake rĩndeithagia<br>
+      Rĩĩtwa rĩa Jesu wĩkĩ<br>
+      Ngoro yakwa nĩĩkenaga<br>
+      Nĩ ũndũ wa rĩĩtwa rĩake.</p>
+    </div>
+
+    <!-- Hymn 3 -->
+    <div class="hymn-card">
+      <h3>No. 37. Mũhonokia, tondũ nĩ ũnyendete</h3>
+      <p>1. Mũhonokia, tondũ nĩ ũnyendete<br>
+      Nĩngwenda ũingwate guoko gwakwa;<br>
+      Ndiũĩ njĩra na ndirĩ na hinya;<br>
+      Ndingĩhota gũthiĩ ndĩ nyiki.</p>
+
+      <p>2. Ũngwate guoko rĩu na ndingĩmakio,<br>
+      Nĩ wega njikare hamwe nawe;<br>
+      Mwihoko wakwa na gũkena gwakwa,<br>
+      Nĩ getha ndĩgatigane nawe.</p>
+
+      <p>3. Ũngwate guoko rĩu na ũtherere,<br>
+      Tondũ nduma nĩ ndumanu mũno;<br>
+      Ndetĩkia nĩyonage rĩrĩ waku,<br>
+      Nyinage nyĩmbo ngenete mũno.</p>
+
+      <p>4. Ũngwate guoko na rĩrĩa ngakinya,<br>
+      Rũũrĩ rũrĩa waringĩre tene;<br>
+      Ngatonya kũu bũrũri mwega mũno,<br>
+      Ngatũũre nawe tene na tene.</p>
+    </div>
+  </div>
+</section>
+<!-- 16) Mr. & Mrs. Muiruri Photo -->
+<section class="slide muiruri-photo" data-title="Mr. & Mrs. Muiruri">
+  <div class="photo-wrapper">
+    <figure>
+      <img src="assets/images/couple.png" alt="Mr. & Mrs. Muiruri">
+      <figcaption class="caption">Mr. & Mrs. Muiruri</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 17) Message from the Family -->
+<section class="slide family-message" data-title="Message from the Family">
+  <div class="message-card">
+    <!-- Header -->
+    <h2 class="message-header">
+      Message from the Family to Elder Esther
+    </h2>
+
+    <!-- Full Message -->
+    <p class="message-full">
+      You have been a radiant star in service, a pillar of strength and guidance to all,
+      leading with grace from the forefront. As you step into this new season,
+      may you shine even brighter, clothed in unfolding glory of the Lord.
+      We are indeed blessed to have such a matriarch, a woman of values in her journey of service.
+      We deeply love and appreciate you, cherishing the legacy of faith and devotion
+      you have sown into our lives.
+    </p>
+
+    <p class="highlight">Happy Triumphant Retirement.</p>
+  </div>
+</section>
+
+
+<!-- 18) Closing Thanks -->
+<section class="slide closing-thanks" data-title="Closing Thanks">
+  <div class="thanks-card">
+    <!-- Header -->
+    <h2 class="thanks-header">With Grateful Hearts</h2>
+
+    <!-- Body -->
+    <p class="thanks-message">
+      The family of <strong>Elder Esther W. Muiruri</strong> extends heartfelt thanks to each and every one of you.  
+      Your unwavering support, prayers, and partnership have been the pillars of strength along her journey of faithful service.  
+    </p>
+
+    <p class="thanks-message">
+      Today we not only celebrate her triumphant retirement, but we also celebrate the community of love and fellowship that has walked this path with her.  
+    </p>
+
+    <p class="thanks-message">
+      May the Lord bless you abundantly for standing with Elder Esther — in service, in faith, and in this joyful celebration.
+    </p>
+
+    <!-- Highlight -->
+    <p class="thanks-highlight">
+      Congratulations to Elder Esther, and blessings to all who made this day possible!
+    </p>
+  </div>
+</section>
+
 
     </main>
 
