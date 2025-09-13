@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
      Music Playlist Handling
      ================ */
   const playlist = [
-    { src: "assets/music/jesus-iye.mp3", duration: 26000 }, // play only 15 sec
+    { src: "assets/music/jesus_iye.mp3", duration: 26000 }, // play only 15 sec
     { src: "assets/music/background.mp3" } // play full song
   ];
   let currentTrack = 0;
